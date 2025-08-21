@@ -14,6 +14,22 @@ public class Employee {
         this.department = department;
         this.email = email;
     }
-    // Methods will be added here
-}
 
+    // Methods will be added here
+    private int leaveBalance = 20; // Annual leave balance in days
+
+    // Getter method
+    public int getLeaveBalance() {
+        return leaveBalance;
+    }
+
+    // Setter method with validation
+    public void setLeaveBalance(int leaveBalance) {
+        if (leaveBalance >= 0) {
+            this.leaveBalance = leaveBalance;
+        } else {
+            System.out.println("Leave balance cannot be negative.");
+        }
+    }
+
+}
