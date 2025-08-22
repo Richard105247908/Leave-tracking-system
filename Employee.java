@@ -56,4 +56,15 @@ public class Employee {
             System.out.println("Insufficient leave balance or invalid days");
         }
     }
+
+
+
+
+
+
+    public static void main(String[] args) {
+        Employee emp2 = new Employee();
+        LeaveRequest employee = new LeaveRequest(2,emp2,"r","4");
+
+    }
 }
