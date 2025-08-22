@@ -19,6 +19,18 @@ public class LeaveRequest {
         this.status = "Pending"; // Default status
         this.reason = reason;
     }
+    public void setRequestId(int requestId){this.requestId=requestId;}
+    public void setEmployee(Employee employee) {this.employee = employee;}
+    public void setStartDate(String startDate) {this.startDate = startDate;}
+    public void setEndDate(String endDate){this.endDate=endDate;}
+    public void setStatus(String status) {this.status = status;}
+    public void setReason(String reason) {this.reason = reason;}
 
+    public int getRequestId(){return this.requestId;}
+    public Employee getEmployee(){return this.employee;}
+    public String getStartDate(){return this.startDate;}
+    public String getEndDate() {return endDate;}
+    public String getStatus() {return status;}
+    public String getReason() {return reason;}
     // Methods will be added here
 }
