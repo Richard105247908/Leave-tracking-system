@@ -9,6 +9,9 @@ public class LeaveRequest {
     private String status; // "Pending", "Approved", "Denied"
     private String reason;
 
+    //default constructor
+    public LeaveRequest(){}
+
     // Constructor
     public LeaveRequest(int requestId, Employee employee, String startDate,
                         String endDate, String reason) {
@@ -19,6 +22,9 @@ public class LeaveRequest {
         this.status = "Pending"; // Default status
         this.reason = reason;
     }
+
+    //New Constructor
+
     public void setRequestId(int requestId){this.requestId=requestId;}
     public void setEmployee(Employee employee) {this.employee = employee;}
     public void setStartDate(String startDate) {this.startDate = startDate;}

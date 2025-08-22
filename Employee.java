@@ -7,6 +7,14 @@ public class Employee {
     private String department;
     private String email;
 
+    //default constructor
+    public Employee(){
+        this.employeeId = 0;
+        this.name = "Unknown";
+        this.department = "Not Assigned";
+        this.email = "noemail@company.com";
+    }
+
     // Constructor
     public Employee(int employeeId, String name, String department, String email) {
         this.employeeId = employeeId;
@@ -41,5 +49,11 @@ public class Employee {
             System.out.println("Leave balance cannot be negative.");
         }
     }
-
+    public void deductLeave(int days){
+        if (days <= leaveBalance && days>0) {
+            leaveBalance -=days;
+        }else{
+            System.out.println("Insufficient leave balance or invalid days");
+        }
+    }
 }
