@@ -1,6 +1,6 @@
 package Leave_tracking_system;
 
-public class LeaveRequest {
+public abstract class LeaveRequest implements Approvable {
 
     private int requestId;
     private Employee employee;
@@ -97,6 +97,8 @@ public class LeaveRequest {
         System.out.println("Processing generic leave request...");
         return true;
     }
+    // Abstract method that subclasses must implement
+    public abstract int calculateLeaveDays();
 
 }
 
