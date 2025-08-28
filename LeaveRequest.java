@@ -91,6 +91,13 @@ public class LeaveRequest {
             System.out.println("Invalid status");
         }
     }
+    // In the parent LeaveRequest class
+    public boolean processRequest() {
+        // Basic request processing logic
+        System.out.println("Processing generic leave request...");
+        return true;
+    }
+
 }
 
 
